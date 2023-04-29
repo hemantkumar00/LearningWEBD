@@ -1,0 +1,30 @@
+section > h1 {
+  color: red;
+  font-size: 3em;
+  text-align: center;
+}
+
+section {
+  margin: 100px auto;
+  max-width: 70vh;
+  min-height: 40vh;
+  border: 2px solid black;
+}
+
+@media all and (max-width: 1200px) and (orientation: portrait) {
+  section > h1 {
+    color: blue;
+    font-size: 2em;
+  }
+}
+
+@media all and (450px < width <= 768px) {
+  section {
+    background-color: #000;
+    color: white;
+  }
+  section > h1 {
+    color: yellow;
+    font-size: 1.5em;
+  }
+}

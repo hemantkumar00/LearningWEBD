@@ -1,0 +1,23 @@
+img {
+  height: 80px;
+  width: 80px;
+}
+
+section {
+  text-align: center;
+  min-height: 40vh;
+  width: 40vh;
+  border: 2px solid black;
+  margin: 100px auto;
+  background-color: antiquewhite;
+  border-radius: 5%;
+  transition-property: transform, background-color;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.97, -1.2, 0.11, 1.75);
+}
+
+section:hover {
+  transform: scale(1.2);
+  background-color: blueviolet;
+  color: white;
+}
