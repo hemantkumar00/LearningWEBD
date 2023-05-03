@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "nav footer footer";
+
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+header,
+nav,
+footer,
+aside,
+section,
+main {
+  background-color: steelblue;
+  color: white;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
