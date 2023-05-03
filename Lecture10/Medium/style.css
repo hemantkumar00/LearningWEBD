@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 75px;
+  background-color: #ffc017;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  width: 180px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+body {
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #ffc017;
+  top: 75px;
+}
+
+.hero_info > h1 {
+  font-size: 106px;
+  align-self: center;
+}
+
+.hero_info > p {
+  font-size: 24px;
+  align-self: center;
+}
+.hero_info > button {
+  width: fit-content;
+  font-size: 20px;
+  align-self: center;
+}
+
+.hero_info {
+  gap: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.hero_img {
+  width: 40%;
+  height: 50vh;
+  background-image: url("pngwing.com.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
