@@ -14,6 +14,7 @@ header {
   border-bottom: 2px solid #000;
   width: 100%;
   position: fixed;
+  z-index: 1000;
 }
 
 .logo {
@@ -44,10 +45,11 @@ body {
 }
 
 .hero {
+  width: 100%;
   display: flex;
   position: absolute;
   flex-direction: row;
-  width: 100%;
+
   justify-content: space-around;
   background-color: #ffc017;
   top: 75px;
