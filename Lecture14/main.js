@@ -1,70 +1,70 @@
-// const arr = [
-//   "string",
-//   24,
-//   true,
-//   function () {
-//     console.log("Hello World");
-//   },
-// ];
+const arr = [
+  "string",
+  24,
+  true,
+  function () {
+    console.log("Hello World");
+  },
+];
 
-// // // arr = [20,30]  can not do this with const
+arr = [20, 30]; // can not do this with const
 
-// // // console.log(arr);
-// // // console.log(arr[3]());
+console.log(arr);
+console.log(arr[3]());
 
-// // // arr[1] = 25;
+arr[1] = 25;
 
-// // // console.log(arr);
+console.log(arr);
 
-// // console.log(arr);
+console.log(arr);
 
-// // arr.push("Mango");
+arr.push("Mango");
 
-// // console.log(arr);
+console.log(arr);
 
-// // arr.unshift("Grapes");
+arr.unshift("Grapes");
 
-// // console.log(arr);
+console.log(arr);
 
-// // for (let item of arr) {
-// //   console.log(item);
-// // }
+for (let item of arr) {
+  console.log(item);
+}
 
-// // // delete arr[5];
+// delete arr[5];
 
-// // // console.log(arr);
-
-// // console.log(arr.splice(1, 0, "Hello", "Uncle"));
-
-// // console.log(arr);
-
-// // arr.forEach((x, index, arr) => {
-// //   console.log(x * x);
-// // });
-
-// // console.log(arr);
-
-// // console.log(arr.indexOf("Hello"));
-
-// const objectArr = [
-//   { name: "Hmant", age: 22, cith: "Jodhpur" },
-//   { name: "Heman", age: 22, cith: "Jodhpur" },
-//   { name: "Hemat", age: 22, cith: "Jodhpur" },
-//   { name: "Hemnt", age: 22, cith: "Jodhpur" },
-// ];
-
-// // console.log(objectArr.find((item) => (item.name = "Hmant")));
-
-// console.log(objectArr.filter((item) => item.age <= 22));
-
-// console.log(arr.map((item) => item * item));
-
-// arr.sort((a, b) => b - a);
 // console.log(arr);
 
-// console.log(arr.reduce((sum, curr) => sum + curr, 0));
+console.log(arr.splice(1, 0, "Hello", "Uncle"));
 
-// Objects
+console.log(arr);
+
+arr.forEach((x, index, arr) => {
+  console.log(x * x);
+});
+
+console.log(arr);
+
+console.log(arr.indexOf("Hello"));
+
+const objectArr = [
+  { name: "Hmant", age: 22, cith: "Jodhpur" },
+  { name: "Heman", age: 22, cith: "Jodhpur" },
+  { name: "Hemat", age: 22, cith: "Jodhpur" },
+  { name: "Hemnt", age: 22, cith: "Jodhpur" },
+];
+
+// console.log(objectArr.find((item) => (item.name = "Hmant")));
+
+console.log(objectArr.filter((item) => item.age <= 22));
+
+console.log(arr.map((item) => item * item));
+
+arr.sort((a, b) => b - a);
+console.log(arr);
+
+console.log(arr.reduce((sum, curr) => sum + curr, 0));
+
+Objects;
 
 const obj = {
   name: "Hemant",
