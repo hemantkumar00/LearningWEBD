@@ -7,7 +7,7 @@ const arr = [
   },
 ];
 
-arr = [20, 30]; // can not do this with const
+// arr = [20, 30]; // can not do this with const
 
 console.log(arr);
 console.log(arr[3]());
