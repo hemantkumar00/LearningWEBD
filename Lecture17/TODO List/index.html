@@ -11,7 +11,7 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="main-header" class="bg-primary text-white p-4 mb-3">
@@ -31,6 +31,19 @@
         </div>
       </div>
     </header>
+
+    <form class="color-picker">
+      <fieldset>
+        <label for="light">Light</label>
+        <input type="radio" name="theme" id="light" />
+        <label for="blue">Blue</label>
+        <input type="radio" name="theme" id="blue" />
+        <label for="green">Green</label>
+        <input type="radio" name="theme" id="green" />
+        <label for="dark">Dark</label>
+        <input type="radio" name="theme" id="dark" />
+      </fieldset>
+    </form>
 
     <div class="container">
       <div id="main" class="card card-body">

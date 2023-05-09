@@ -1,0 +1,73 @@
+:root {
+  --bg-color: white;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+}
+
+fieldset {
+  background-color: white;
+  border: 1px solid black;
+  width: fit-content;
+  padding: 20px;
+  margin: 20px;
+  font-size: 24px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 10px;
+
+  outline: 2px solid var(--radio-color);
+  outline-offset: 3px;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--radio-color);
+}
+
+#light {
+  --radio-color: rgb(201, 201, 201);
+}
+
+#blue {
+  --radio-color: rgb(0, 132, 255);
+}
+
+#green {
+  --radio-color: rgb(0, 255, 110);
+}
+
+#dark {
+  --radio-color: rgb(60, 60, 60);
+}
+
+:root:has(#blue:checked) {
+  --bg-color: rgb(0, 132, 255);
+}
+
+:root:has(#light:checked) {
+  --bg-color: rgb(201, 201, 201);
+}
+
+:root:has(#green:checked) {
+  --bg-color: rgb(0, 255, 110);
+}
+
+:root:has(#dark:checked) {
+  --bg-color: rgb(60, 60, 60);
+}
