@@ -79,3 +79,46 @@ function filterEvent(e) {
 }
 
 document.onload = applyTheme();
+
+const listItems = document.querySelectorAll("#items>.list-group-item");
+
+console.log(listItem);
+
+let dragSrcElement = null;
+
+function dragStart(e) {
+  dragSrcElement = this;
+  e.dataTransfer.effectAllowed = "move";
+  console.log(this);
+  e.dataTransfer.setData("text", this.textContent);
+}
+
+function dragEnter() {
+  console.log("dragenter");
+}
+
+function dragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = "move";
+  // console.log("dragover");
+}
+
+function dragLeave() {
+  console.log("dragleave");
+}
+
+function HandleDrop(e) {
+  if (dragSrcElement !== this) {
+    dragSrcElement.textContent = this.textContent;
+    this.textContent = e.dataTransfer.getData("text");
+  }
+  // console.log("drop");
+}
+
+listItems.forEach((item) => {
+  item.addEventListener("dragstart", dragStart);
+  item.addEventListener("dragenter", dragEnter);
+  item.addEventListener("dragover", dragOver);
+  item.addEventListener("dragleave", dragLeave);
+  item.addEventListener("drop", HandleDrop);
+});
