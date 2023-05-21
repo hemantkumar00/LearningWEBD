@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello from ejs</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit
+      earum nam praesentium eligendi magnam error nulla, rerum architecto nobis,
+      aperiam fuga aut eius quidem dolore quis provident modi accusantium.
+    </p>
+
+    <%if(Math.floor(Math.random()*10)%2==0){%>
+    <h1>Random Number</h1>
+    <%} else{%>
+    <h1>Not random number</h1>
+    <%}%>
+  </body>
+</html>
