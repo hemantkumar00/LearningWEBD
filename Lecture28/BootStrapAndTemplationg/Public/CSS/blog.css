@@ -16,7 +16,6 @@ p {
 }
 
 .div-images {
-  border: 2px solid black;
   margin: 10px;
   background-image: url("https://picsum.photos/id/315/2100/1500");
   background-position: center;
